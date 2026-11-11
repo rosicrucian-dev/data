@@ -31,13 +31,22 @@ A file per table, a top-level JSON array, one object per row, keyed by
 a `slug`.
 
 ```
-en/            the tables, in English — 20 files
+en/            the tables, in English — 23 files
 de/            the same files in German; a row missing here falls back
 .schemas/      generated JSON Schema per file, plus the editor wiring
 schemas.ts     the Zod definitions the above are generated FROM
+check.mjs      the check each consumer runs before dev and before a build
 *.json         the four that are not per-language: the Tree's paths,
                the Cube of Space, and the recordings catalogue
 ```
+
+`node content/data/check.mjs`, from a consumer's root, is `npm run
+check:data` in both sites. It **errors** on the one state that is
+always wrong — this repository not checked out, which a fresh clone
+without `--init` leaves empty — and **warns** on the rest: a dirty
+tree, a commit not pushed, a pointer the site has not recorded.
+Warnings, because editing the data and building to look at it is the
+normal way to work.
 
 **`schemas.ts` is the contract**, and the JSON Schemas are derived
 from it — never edit a `.schema.json` by hand. Each consumer's
