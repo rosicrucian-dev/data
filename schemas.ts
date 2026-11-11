@@ -571,8 +571,8 @@ export const ThreeVeilSchema = z.object({
 // principle (Archetypal → Material), its element, and the order of
 // beings that manifest there. The element follows the letters of the
 // Tetragrammaton (Yod-Fire, Heh-Water, Vav-Air, final Heh-Earth),
-// which is the same chain suit-correspondences.json states from the
-// tarot-suit end. Shown as a table on the Qabalah reference page. No
+// which is the same chain suits.json states from the tarot-suit
+// end. Shown as a table on the Qabalah reference page. No
 // foreign keys.
 export const FourWorldSchema = z.object({
   slug: z.string(),
@@ -582,13 +582,14 @@ export const FourWorldSchema = z.object({
   beings: z.string(),
 })
 
-// ---------- suit-correspondences.json ----------
+// ---------- suits.json ----------
 //
 // The four tarot suits paired with their ordinary playing-card
-// equivalents. Shown as a table at the top of the Minor Arcana page.
-// (Distinct from the `suits` export in minor-arcana.ts, which is the
-// full per-suit card list.) No foreign keys.
-export const SuitCorrespondenceSchema = z.object({
+// equivalents, their World, their element and their letter of the
+// Tetragrammaton. (Distinct from MinorSuitSchema above, which is a
+// suit WITH its fourteen cards; this is the suit itself.) No foreign
+// keys.
+export const SuitSchema = z.object({
   tarot: z.string(),
   playingCard: z.string(),
   world: z.string(),
