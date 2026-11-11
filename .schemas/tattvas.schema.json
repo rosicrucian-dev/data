@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "slug": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "kind": {
+        "type": "string",
+        "enum": [
+          "earth",
+          "water",
+          "fire",
+          "air",
+          "spirit"
+        ]
+      },
+      "element": {
+        "type": "string"
+      },
+      "sense": {
+        "type": "string"
+      },
+      "quality": {
+        "type": "string"
+      },
+      "form": {
+        "type": "string"
+      },
+      "color": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "slug",
+      "name",
+      "kind",
+      "element",
+      "sense",
+      "quality",
+      "form",
+      "color"
+    ],
+    "additionalProperties": false
+  }
+}

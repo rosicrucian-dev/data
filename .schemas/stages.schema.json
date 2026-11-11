@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "slug": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "sign": {
+        "type": "string"
+      },
+      "process": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "slug",
+      "name",
+      "sign",
+      "process"
+    ],
+    "additionalProperties": false
+  }
+}
