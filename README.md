@@ -62,12 +62,18 @@ row, which is the point of having them at all.
    disagree. A consumer derives it and tests that it cannot drift.
 2. **A fact has one home.** Where two tables share a key, each keeps
    its own columns and neither borrows the other's.
-3. **The cut is not shared.** Which rows make a table, which columns
-   go on which table, and what the table is called are each
-   consumer's own decision: a cheat sheet wants one Astrology page, a
-   school wants the Work's reading of the planets kept apart from the
-   astrology. This repository holds the facts, not the arrangement.
-4. **Spelling follows the sources**, which means Case: Sulphur, not
+3. **This repository holds the facts, not the arrangement.** Which
+   rows make a table, which columns go on which table and what the
+   table is called are decided in the consumer, not here. As it
+   happens both consumers now decide the same way -- the Hermetic
+   Order of Aquarius's fifteen tables, drawn with the same columns in
+   the same order on both sites, settled 10 November 2026 -- but that
+   is an agreement between them, and a third consumer is free to cut
+   these same facts differently.
+4. **A filename names the thing**, not that it is a correspondence:
+   `suits.json`, not `suit-correspondences.json`. Every file here is
+   a correspondence, so the word distinguishes nothing.
+5. **Spelling follows the sources**, which means Case: Sulphur, not
    Sulfur.
 
 ## Provenance
