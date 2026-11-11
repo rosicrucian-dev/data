@@ -689,3 +689,59 @@ export const GematriaWordsSchema = z.record(
   z.string(),
   GematriaNumberEntrySchema,
 )
+
+// ---------- forces.json ----------
+//
+// The seven planets read as the sevenfold operation of one Power, which
+// is the School of Ageless Wisdom's own lesson (Section A 4, "The Seven
+// Forces"). The rows are IN THE ORDER the lesson names them, and
+// `slug` is a planet in planets.json — the only column here is the PAIR
+// OF OPPOSITES each force governs, attributed to the Sepher Yetzirah's
+// seven doubles: "One face of Mercury is Life, and the other is Death."
+// The interior star, the metal and the angel are the chakras' columns;
+// the Key is reached through the planet's letter and is never stored.
+// `alsoOpposites` is the second reading the School prints in brackets,
+// which two of the seven carry.
+export const ForceSchema = z.object({
+  slug: z.string(),
+  opposites: z.string(),
+  alsoOpposites: z.string().optional(),
+})
+
+// ---------- stages.json ----------
+//
+// The twelve stages of the Great Work, one to each sign of the zodiac,
+// in the signs' own order, which is the Work's. The curriculum heads
+// each with its sign's glyph and defines it in a sentence; `process` is
+// a compression of that definition and never a quotation of it, the
+// lessons being gated where these tables are not. `sign` is a slug in
+// signs.json. The Key is reached through the sign's letter and is not
+// stored.
+export const AlchemyStageSchema = z.object({
+  slug: z.string(),
+  name: z.string(),
+  sign: z.string(),
+  process: z.string(),
+})
+
+// ---------- tattvas.json ----------
+//
+// The five tattvas, the subtle principles of Yoga philosophy, in the
+// order of their evolution, which the lessons give (Sound and Color
+// 10-12) and which describe each in the same four terms. `element` is
+// the Western name for the same thing -- the five tattvas ARE the four
+// elements with Spirit, which the lessons say in those words. `kind`
+// says how the symbol is DRAWN, the geometry being the renderer's.
+// `sense` is the sense whose subtle principle it is, and the Hebrew
+// letter follows from the sense (the five simple letters) rather than
+// being a column.
+export const TattvaSchema = z.object({
+  slug: z.string(),
+  name: z.string(),
+  kind: z.enum(['earth', 'water', 'fire', 'air', 'spirit']),
+  element: z.string(),
+  sense: z.string(),
+  quality: z.string(),
+  form: z.string(),
+  color: z.string(),
+})

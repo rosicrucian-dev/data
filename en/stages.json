@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "calcination",
+    "name": "Calcination",
+    "sign": "aries",
+    "process": "Volatile matter driven off by heat"
+  },
+  {
+    "slug": "congelation",
+    "name": "Congelation",
+    "sign": "taurus",
+    "process": "Fluid brought to a solid by cooling"
+  },
+  {
+    "slug": "fixation",
+    "name": "Fixation",
+    "sign": "gemini",
+    "process": "The three principles given their bounds"
+  },
+  {
+    "slug": "separation",
+    "name": "Separation",
+    "sign": "cancer",
+    "process": "The alchemist's own end formulated"
+  },
+  {
+    "slug": "digestion",
+    "name": "Digestion",
+    "sign": "leo",
+    "process": "A substance worked on by liquid and heat"
+  },
+  {
+    "slug": "distillation",
+    "name": "Distillation",
+    "sign": "virgo",
+    "process": "The volatile drawn off from the less volatile"
+  },
+  {
+    "slug": "sublimation",
+    "name": "Sublimation",
+    "sign": "libra",
+    "process": "Solid to vapour and back, never liquid"
+  },
+  {
+    "slug": "putrefaction",
+    "name": "Putrefaction",
+    "sign": "scorpio",
+    "process": "A body disintegrated into its elements"
+  },
+  {
+    "slug": "incineration",
+    "name": "Incineration",
+    "sign": "sagittarius",
+    "process": "The desire nature burnt clean"
+  },
+  {
+    "slug": "fermentation",
+    "name": "Fermentation",
+    "sign": "capricorn",
+    "process": "The leaven worked through the mass"
+  },
+  {
+    "slug": "dissolution",
+    "name": "Dissolution",
+    "sign": "aquarius",
+    "process": "Substances merged into one homogeneous whole"
+  },
+  {
+    "slug": "multiplication",
+    "name": "Multiplication",
+    "sign": "pisces",
+    "process": "The elixir augmented"
+  }
+]

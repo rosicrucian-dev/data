@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "saturn",
+    "opposites": "Dominion and Slavery"
+  },
+  {
+    "slug": "jupiter",
+    "opposites": "Wealth and Poverty"
+  },
+  {
+    "slug": "mars",
+    "opposites": "Beauty and Ugliness",
+    "alsoOpposites": "Grace and Sin"
+  },
+  {
+    "slug": "sun",
+    "opposites": "Fertility and Sterility"
+  },
+  {
+    "slug": "venus",
+    "opposites": "Wisdom and Folly",
+    "alsoOpposites": "Knowledge and Ignorance"
+  },
+  {
+    "slug": "mercury",
+    "opposites": "Life and Death"
+  },
+  {
+    "slug": "moon",
+    "opposites": "Peace and Strife"
+  }
+]

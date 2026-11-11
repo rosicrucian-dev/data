@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "akasha",
+    "name": "Akasha",
+    "kind": "spirit",
+    "element": "Spirit",
+    "sense": "Hearing",
+    "quality": "Pure space",
+    "form": "Vesica",
+    "color": "Indigo"
+  },
+  {
+    "slug": "vayu",
+    "name": "Vayu",
+    "kind": "air",
+    "element": "Air",
+    "sense": "Touch",
+    "quality": "Pure motion",
+    "form": "Spherical",
+    "color": "Blue-green"
+  },
+  {
+    "slug": "tejas",
+    "name": "Tejas",
+    "kind": "fire",
+    "element": "Fire",
+    "sense": "Sight",
+    "quality": "Expansion",
+    "form": "Triangular",
+    "color": "Red"
+  },
+  {
+    "slug": "apas",
+    "name": "Apas",
+    "kind": "water",
+    "element": "Water",
+    "sense": "Taste",
+    "quality": "Contraction",
+    "form": "Crescent",
+    "color": "Silver-white"
+  },
+  {
+    "slug": "prithivi",
+    "name": "Prithivi",
+    "kind": "earth",
+    "element": "Earth",
+    "sense": "Smell",
+    "quality": "Cohesion",
+    "form": "Cubical",
+    "color": "Yellow"
+  }
+]
